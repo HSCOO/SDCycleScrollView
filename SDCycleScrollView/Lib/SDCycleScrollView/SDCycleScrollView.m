@@ -310,6 +310,7 @@ NSString * const ID = @"SDCycleScrollViewCell";
         [self invalidateTimer];
     }
     
+    self.backgroundImageView.hidden = (self.imageURLStringsGroup.count > 0);
     [self setupPageControl];
     [self.mainView reloadData];
 }
